@@ -197,7 +197,7 @@
   
   nix = {
     settings = {
-      substituters = pkgs.lib.mkForce [
+      substituters = pkgs.lib.mkBefore [
         "https://mirrors.bfsu.edu.cn/nix-channels/store"
         "https://mirrors.tuna.tsinghua.edu.cn/nix-channels/store"
       ];
