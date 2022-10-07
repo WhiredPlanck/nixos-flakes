@@ -38,13 +38,16 @@
     };
     profiles = {
       default = {
+        settings = {
+          "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+        };
         userChrome = ''
         #TabsToolbar {
           visibility: collapse !important;
         }
 
         #sidebar-close {
-          visibility: collapse !important;
+          visibility: collapse;
         }
         '';
       };
