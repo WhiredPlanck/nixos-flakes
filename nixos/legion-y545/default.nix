@@ -9,6 +9,7 @@ nixpkgs.lib.nixosSystem {
     ./configuration.nix
     # Include the results of the hardware scan.
     ./hardware.nix
+    ./programs.nix
     # Include Home Manager
     ( import "${home-manager}/nixos" )
   ];
