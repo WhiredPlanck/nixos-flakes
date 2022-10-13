@@ -55,7 +55,6 @@
 
   hardware = {
     cpu.intel.updateMicrocode = true;
-    video.hidpi.enable = true;
     nvidia = {
       prime = {
         offload.enable = true;
@@ -81,7 +80,6 @@
     displayManager = {
       sddm = {
         enable = true;
-        enableHidpi = true;
       };
       defaultSession = "plasma";
     };
